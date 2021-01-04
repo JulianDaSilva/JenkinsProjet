@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+
 public class CalculTest {
 	
 	private Calculs c1 = null;
@@ -28,8 +29,8 @@ public class CalculTest {
 	if(c1.multiplier() != 2)
 	{
 		fail("Methode multiplier non conforme 2*1=2 ne fonctionne pas.");
-		assertEquals(c1.multiplier(), 2);
 	}
+		assertEquals(c1.multiplier(), 2);
 	}	
 	/**
 	* Test method for {​​@link Calculs#additionner()}​​.

@@ -3,17 +3,46 @@
   <groupId>IntegrationContinue2</groupId>
   <artifactId>IntegrationContinue2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-   <properties> 
-  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-  <java.version>11</java.version>
-  <maven.compiler.source>${​​java.version}​​</maven.compiler.source>
-  <maven.compiler.target>${​​java.version}​​</maven.compiler.target>
-  <junit-platform.version>5.3.1</junit-platform.version>
+  <properties> 
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  	<java.version>11</java.version>
+  	<maven.compiler.source>${​​java.version}​​</maven.compiler.source>
+  	<maven.compiler.target>${​​java.version}​​</maven.compiler.target>
+  	<junit-platform.version>5.3.1</junit-platform.version>
   </properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <pluginManagement>
     <plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.8.0</version>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>3.0.0-M3</version>
+<configuration>
+<testFailureIgnore>
+true
+</testFailureIgnore>
+<argLine>
+--illegal-access=permit
+</argLine>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-failsafe-plugin</artifactId>
+<version>3.0.0-M3</version>
+<configuration>
+<argLine>
+--illegal-access=permit
+</argLine>
+</configuration>
+</plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
@@ -23,6 +52,7 @@
         </configuration>
       </plugin>
     </plugins>
+</pluginManagement>
   </build>
   <dependencies>
   	<dependency>
