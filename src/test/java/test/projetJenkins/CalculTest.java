@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class CalculTest2 {
+public class CalculTest {
 	
 	private Calculs c1 = null;
 	private Calculs c2 = null;
@@ -35,5 +35,7 @@ public class CalculTest2 {
 	* Test method for {​​@link Calculs#additionner()}​​.
 	*/
 	@Test
-	void testAdditionner() {}
+	void testAdditionner() {
+		
+	}
 }
