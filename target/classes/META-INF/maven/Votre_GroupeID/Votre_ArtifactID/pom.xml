@@ -1,7 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>Groupe3</groupId>
-	<artifactId>projetJenkins</artifactId>
+	<groupId>Votre_GroupeID</groupId>
+	<artifactId>Votre_ArtifactID</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>NomExemple</name>
 	<description>DescExemple</description>
@@ -9,8 +11,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>11</java.version>
-		<maven.compiler.source>${​​​​​java.version}​​​​​</maven.compiler.source>
-		<maven.compiler.target>${​​​​​java.version}​​​​​</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11​​​​​</maven.compiler.target>
 		<junit-platform.version>5.7.0</junit-platform.version>
 	</properties>
 
