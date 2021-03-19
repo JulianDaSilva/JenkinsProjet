@@ -9,19 +9,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'mvn clean verify'
+                bat 'mvn clean verify'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
         stage('Install') {
             steps {
                 echo 'Deploying....'
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }            
     }
