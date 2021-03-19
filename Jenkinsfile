@@ -12,14 +12,6 @@ pipeline {
         NEXUS_CREDENTIAL_ID = "nexus-user-credentials"
     }
     stages {
-        stage("Clone code from VCS") {
-            steps {
-                script {
-                    git 'https://github.com/JulianDaSilva/JenkinsProjet';
-                }
-            }
-        }
-    stages {
         stage('Build') {
             steps {
                 echo 'Building..'
