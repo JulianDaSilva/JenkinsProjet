@@ -29,6 +29,7 @@ pipeline {
                 echo 'Deploying....'
                 bat 'mvn clean install'
             }
+        }
             stage("Publish to Nexus Repository Manager") {
                 steps {
                     script {
